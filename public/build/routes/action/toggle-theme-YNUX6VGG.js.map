@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes\\action\\toggle-theme.tsx?browser", "../../../../app/routes/action/toggle-theme.tsx"],
+  "sourcesContent": ["export { default } from \"./routes\\\\action\\\\toggle-theme.tsx\";", "import type { ActionFunction } from 'remix'\nimport { json, redirect } from 'remix'\n\nimport { isTheme } from '~/hooks/use-theme'\nimport { getThemeSession } from '~/utils/theme.server'\n\nexport const action: ActionFunction = async ({ request }) => {\n  const themeSession = await getThemeSession(request)\n  const requestText = await request.text()\n  const form = new URLSearchParams(requestText)\n  const theme = form.get('theme')\n  if (!isTheme(theme))\n    return json({\n      success: false,\n      message: `theme value of ${theme} is not a valid theme.`,\n    })\n\n  themeSession.setTheme(theme)\n  return json(\n    { success: true },\n    {\n      headers: { 'Set-Cookie': await themeSession.commit() },\n    }\n  )\n}\n\nexport const loader = () => redirect('/', { status: 404 })\n\nexport default function MarkRead() {\n  return <div>Oops... You should not see this.</div>\n}\n"],
+  "mappings": ";;;;;;;;;;;;AAAA;;;ACAA;AAIA,mBAAgC;AAwBjB,oBAAoB;AACjC,SAAO,oCAAC,OAAD,MAAK;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes\\Flyingshit.tsx?browser"],
+  "sourcesContent": ["export { default } from \"./routes\\\\Flyingshit.tsx\";"],
+  "mappings": ";;;;;;;;;AAAA;",
+  "names": []
+}

@@ -1,0 +1,13 @@
+import {
+  Flyingshit_default
+} from "/build/_shared/chunk-PXWP2Y65.js";
+import {
+  init_react
+} from "/build/_shared/chunk-BNRLY3XL.js";
+
+// browser-route-module:routes\FlyingShit.tsx?browser
+init_react();
+export {
+  Flyingshit_default as default
+};
+//# sourceMappingURL=/build/routes/FlyingShit-4ASX6XDC.js.map

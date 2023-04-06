@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes\\FlyingShit copy.tsx?browser", "../../../app/routes/FlyingShit copy.tsx"],
+  "sourcesContent": ["export { default } from \"./routes\\\\FlyingShit copy.tsx\";", "import { motion, useAnimation } from \"framer-motion\";\r\nimport { useState, useEffect } from \"react\";\r\n\r\nconst FlyingShit = () => {\r\n    return (\r\n        <img src='../../../assets/Alirom_Logo_Variations-05.png' width={200} style={{ position: 'absolute' }} />\r\n    )\r\n}\r\n\r\nexport default FlyingShit\r\n\r\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAGA,IAAM,aAAa,MAAM;AACrB,SACI,oCAAC,OAAD;AAAA,IAAK,KAAI;AAAA,IAAgD,OAAO;AAAA,IAAK,OAAO,EAAE,UAAU;AAAA;AAAA;AAIhG,IAAO,0BAAQ;",
+  "names": []
+}

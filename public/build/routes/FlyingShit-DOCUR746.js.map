@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes\\FlyingShit.tsx?browser", "../../../app/routes/FlyingShit.tsx"],
+  "sourcesContent": ["export { default } from \"./routes\\\\FlyingShit.tsx\";", "import { useMemo } from 'react'\r\nimport { useTheme } from '~/hooks/use-theme'\r\nimport styled, { keyframes } from 'styled-components';\r\n\r\nconst spinAnimation = keyframes`\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n`;\r\n\r\nconst FlyingShitImage = styled.img`\r\n  position: absolute;\r\n  width: 200px;\r\n  animation: ${spinAnimation} 2s infinite linear;\r\n`;\r\n\r\nconst FlyingShit = () => {\r\n    const { theme } = useTheme()\r\n    const isDarkMode = useMemo(() => theme === 'dark', [theme])\r\n\r\n    return isDarkMode ? (\r\n        <FlyingShitImage src='../../../assets/Alirom_Logo_Variations-06.png' />\r\n    ) : (\r\n        <FlyingShitImage src='../../../assets/Alirom_Logo_Variations-05.png' />\r\n    )\r\n}\r\n\r\nexport default FlyingShit\r\n\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;AAAA;;;ACAA;AAAA,mBAAwB;AAIxB,IAAM,gBAAgB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAStB,IAAM,kBAAkB,sCAAO;AAAA;AAAA;AAAA,eAGhB;AAAA;AAGf,IAAM,aAAa,MAAM;AACrB,QAAM,EAAE,UAAU;AAClB,QAAM,aAAa,0BAAQ,MAAM,UAAU,QAAQ,CAAC;AAEpD,SAAO,aACH,oCAAC,iBAAD;AAAA,IAAiB,KAAI;AAAA,OAErB,oCAAC,iBAAD;AAAA,IAAiB,KAAI;AAAA;AAAA;AAI7B,IAAO,qBAAQ;",
+  "names": []
+}

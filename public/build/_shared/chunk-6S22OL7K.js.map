@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/Flyingshit.tsx"],
+  "sourcesContent": ["import { motion, useAnimation } from \"framer-motion\";\r\nimport { useState, useEffect } from \"react\";\r\nconst FlyingShit = () => {\r\n    const controls = useAnimation();\r\n    const [direction, setDirection] = useState(1);\r\n\r\n    useEffect(() => {\r\n        controls.start({\r\n            rotate: [null, 360 * direction],\r\n            transition: {\r\n                duration: 3,\r\n                repeat: Infinity,\r\n                ease: \"linear\"\r\n            }\r\n        });\r\n\r\n        setTimeout(() => {\r\n            setDirection(-1 * direction);\r\n        }, 3000);\r\n    }, [direction, controls]);\r\n    return (\r\n        <img src='../../../assets/Alirom_Logo_Variations-05.png' width={200} style={{ position: 'absolute' }} />\r\n    )\r\n}\r\n\r\nexport default FlyingShit"],
+  "mappings": ";;;;;;;;;;;AAAA;AACA,mBAAoC;AACpC,IAAM,aAAa,MAAM;AACrB,QAAM,WAAW;AACjB,QAAM,CAAC,WAAW,gBAAgB,2BAAS;AAE3C,8BAAU,MAAM;AACZ,aAAS,MAAM;AAAA,MACX,QAAQ,CAAC,MAAM,MAAM;AAAA,MACrB,YAAY;AAAA,QACR,UAAU;AAAA,QACV,QAAQ;AAAA,QACR,MAAM;AAAA;AAAA;AAId,eAAW,MAAM;AACb,mBAAa,KAAK;AAAA,OACnB;AAAA,KACJ,CAAC,WAAW;AACf,SACI,oCAAC,OAAD;AAAA,IAAK,KAAI;AAAA,IAAgD,OAAO;AAAA,IAAK,OAAO,EAAE,UAAU;AAAA;AAAA;AAIhG,IAAO,qBAAQ;",
+  "names": []
+}

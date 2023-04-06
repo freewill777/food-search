@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/project-header-mdx.tsx"],
+  "sourcesContent": ["import type { Project } from '../../projects'\n\ntype ProjectHeaderProps = {\n  project: Project\n}\n\nexport const ProjectHeaderMDX = ({ project }: ProjectHeaderProps) => (\n  <header className='flex-col-reverse flex lg:flex-row container mt-40 lg:items-center mb-20'>\n    <section className='w-full lg:w-1/2 z-10 break-words'>\n      <div className='mb-6 text-xl font-light leading-relaxed text-dark-400 dark:text-dark-200'>\n        Coming soon...\n      </div>\n\n      <h2 className='text-4xl font-medium !leading-tight md:text-5xl lg:text-6xl'>\n        {project.name}\n      </h2>\n\n      <h4 className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'>\n        {project.area}\n      </h4>\n    </section>\n\n    <figure className='h-full w-full mb-8 lg:mt-0 lg:w-1/2 aspect-[4/3]'>\n      <img src={project.image} alt={project.imageAlt} className='w-full h-full object-cover' />\n    </figure>\n  </header>\n)\n"],
+  "mappings": ";;;;;;AAAA;AAMO,IAAM,mBAAmB,CAAC,EAAE,cACjC,oCAAC,UAAD;AAAA,EAAQ,WAAU;AAAA,GAChB,oCAAC,WAAD;AAAA,EAAS,WAAU;AAAA,GACjB,oCAAC,OAAD;AAAA,EAAK,WAAU;AAAA,GAA2E,mBAI1F,oCAAC,MAAD;AAAA,EAAI,WAAU;AAAA,GACX,QAAQ,OAGX,oCAAC,MAAD;AAAA,EAAI,WAAU;AAAA,GACX,QAAQ,QAIb,oCAAC,UAAD;AAAA,EAAQ,WAAU;AAAA,GAChB,oCAAC,OAAD;AAAA,EAAK,KAAK,QAAQ;AAAA,EAAO,KAAK,QAAQ;AAAA,EAAU,WAAU;AAAA;",
+  "names": []
+}

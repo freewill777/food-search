@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/Flyingshit.tsx"],
+  "sourcesContent": ["import { useMemo } from 'react'\r\nimport { useTheme } from '~/hooks/use-theme'\r\n\r\nconst FlyingShit = () => {\r\n    const { theme, toggleTheme } = useTheme()\r\n    const isDarkMode = useMemo(() => theme === 'dark', [theme])\r\n\r\n    return isDarkMode ? (\r\n        <img src='../../../assets/Alirom_Logo_Variations-05.png' width={200} style={{ position: 'absolute' }} />\r\n    ) : (\r\n        <img src='../../../assets/Alirom_Logo_Variations-06.png' width={200} style={{ position: 'absolute' }} />\r\n    )\r\n}\r\n\r\nexport default FlyingShit\r\n\r\n"],
+  "mappings": ";;;;;;;;;;;AAAA;AAAA,mBAAwB;AAGxB,IAAM,aAAa,MAAM;AACrB,QAAM,EAAE,OAAO,gBAAgB;AAC/B,QAAM,aAAa,0BAAQ,MAAM,UAAU,QAAQ,CAAC;AAEpD,SAAO,aACH,oCAAC,OAAD;AAAA,IAAK,KAAI;AAAA,IAAgD,OAAO;AAAA,IAAK,OAAO,EAAE,UAAU;AAAA,OAExF,oCAAC,OAAD;AAAA,IAAK,KAAI;AAAA,IAAgD,OAAO;AAAA,IAAK,OAAO,EAAE,UAAU;AAAA;AAAA;AAIhG,IAAO,qBAAQ;",
+  "names": []
+}
